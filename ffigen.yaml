@@ -1,0 +1,16 @@
+name: CvEngineBindings
+description: C ABI for the offline MirrorDNA CV engine.
+output: lib/core/ffi/cv_engine_bindings.g.dart
+headers:
+  entry-points:
+    - native/cv_engine/include/cv_engine_api.h
+functions:
+  include:
+    - cv_.*
+
+macros:
+  exclude:
+    - '.*'
+typedefs:
+  exclude:
+    - '.*'
